@@ -12,7 +12,6 @@
 |cicd.dryRunSuccess|dryRunTest|0|real|count|did the dry run succeed?||
 |cicd.dryRunFailure|dryRunTest|0|real|count|did the dry run fail?||
 |cicd.deploySuccess|cd deploy|1|real|count|did the deployment succeed?|whether you are using a firstDeploy (canary) or jump directly to full deployment (finalDeploy), at the start of this phase (or phases), from this point forward you MUST emit a cicd.deploySuccess or cicd.deployFailure.
-
 NOTE: there is no deployDuration because we have the cicd.duration metric which covers everything.  we just wanted an explicit deploySuccess, deployFailure anytime we start an actual deployment.  this means we could have post gold master build/test cycles that fail before we start a deploy.  this is okay but undesirable.  if we think this is happening a lot, we can compare the number of gold master builds to the number of deploys and when they differ, ask ourselves if we care.|
 |cicd.deployFailure|cd deploy|1|real|count|did the deployment fail?||
 |cicd.firstDeployDuration|firstDeploy|1|real|seconds|duration of the first deployment|this stage represents a canary deployment.  It is optional.  but whether this is a canary that you are measuring or any time that you are deploying - at the start of first deploy (or start of final deploy) going forward you MUST increment cicd.deploySuccess (or cicd.deployFailure)|
