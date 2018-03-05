@@ -1,6 +1,6 @@
 
 |datadog metric name|milestone|required|metric type|units|definition|notes|
-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|--------------------------|
 |cicd.duration|ALL|1|real|seconds|duration of the current run|always emit duration from the start of a ci or cd run as we can compare it to the sum of constituent parts to see if there are inter-stage delays.  Always emit a value for the tag cicd_type - in order to determine whether it is a ci run or a cd run.  always emit all four levels of the component taxonomy (division, product, system, component).  the duration is from the time of merge into GM (Gold Master) through to whenever the last milestone happened in the current run.|
 |cicd.buildDuration|build|1|real|seconds|build duration||
 |cicd.buildSuccess|build|1|real|count|did the build work?||
