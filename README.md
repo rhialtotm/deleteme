@@ -1,3 +1,4 @@
+<span style="font-size: 8pt;">
 
 |datadog metric name|milestone|required|metric type|units|definition|notes|
 |-|-|-|-|-|-|--------------------------------------------|
@@ -28,3 +29,5 @@
 |cicd.validateFinalDeployDuration|validateFinalDeploy|1|real|seconds|duration of the validation of the final deployment|metrics validating the final deployment|
 |cicd.validateFinalDeploySuccess|validateFinalDeploy|1|real|count|did the validation of the final deployment succeed?||
 |cicd.validateFinalDeployFailure|validateFinalDeploy|1|real|count|did the validation of the final deployment fail?||
+
+</span>
