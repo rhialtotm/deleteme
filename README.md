@@ -1,4 +1,4 @@
-<span style="font-size: 8pt;">
+<div style="font-size: 8pt;">
 
 |datadog metric name|milestone|required|metric type|units|definition|notes|
 |-|-|-|-|-|-|--------------------------------------------|
@@ -30,4 +30,4 @@
 |cicd.validateFinalDeploySuccess|validateFinalDeploy|1|real|count|did the validation of the final deployment succeed?||
 |cicd.validateFinalDeployFailure|validateFinalDeploy|1|real|count|did the validation of the final deployment fail?||
 
-</span>
+</div>
